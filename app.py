@@ -236,6 +236,7 @@ if st.button("🔍 Predict Transaction", type="primary"):
         st.error("🚨 FRAUD TRANSACTION DETECTED")
     else:
         st.success("✅ NORMAL TRANSACTION")
+        st.balloons()
 
     st.write(
         f"Fraud Probability: **{probability * 100:.2f}%**"
